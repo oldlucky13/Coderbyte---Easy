@@ -86,16 +86,30 @@ console.log(LetterChanges("acfghkomz!!!."));
 
 
 
+//exercise five
+
+function SimpleAdding(num) { 
+
+  var array = []
+  , sum = 0;
 
 
+  for (var i = 1; i <= num ; i++) {
+    array.push(i);
+  }
+  
+
+  for(var i=0; i< array.length; i++){
+    sum += array[i];
+
+ }
+ 
+ return sum  ; 
+
+}
 
 
-
-
-
-
-
-
+console.log(SimpleAdding(100));
 
 
 
