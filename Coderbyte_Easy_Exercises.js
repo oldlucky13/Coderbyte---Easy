@@ -27,10 +27,14 @@ Exercise One
 Have the function FirstReverse(str) take the str parameter being
 passed and return the string in reversed order.
 *************************************************************/
-function FirstReverse(str) {     var array = [];   for(var i = 1, len
-= str.length ; i <= len ; i++){       array.push(str.charAt(len - i));
-}   return str = array.join("");
+function FirstReverse(str) {    
+ var array = [];   
+ 
+      for(var i = 1, len = str.length ; i <= len ; i++){       
+          array.push(str.charAt(len - i));
+}   
 
+return str = array.join("");
           
 }
 console.log(FirstReverse("Wow this string will be reversed!"));
