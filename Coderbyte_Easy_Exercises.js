@@ -50,7 +50,7 @@ passed and return the factorial of it (ie. if num = 4, return (4 * 3 *
 *************************************************************/
 
 function FirstFactorial(num) { 
-  			var array = [] 
+  			 var array = [] 
 			for(var i = num; i > -1; i--){
             	array.push(num - i );
             }
