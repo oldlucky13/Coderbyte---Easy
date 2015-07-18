@@ -1,16 +1,50 @@
-//exercise one
-function FirstReverse(str) { 
-   var array = [];
-  for(var i = 1, len = str.length ; i <= len ; i++){
-  		array.push(str.charAt(len - i));
-  }
-  return str = array.join(""); 
+
+ ██████╗ ██████╗ ██████╗ ███████╗██████╗ ██████╗ ██╗   ██╗████████╗███████╗
+██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗╚██╗ ██╔╝╚══██╔══╝██╔════╝
+██║     ██║   ██║██║  ██║█████╗  ██████╔╝██████╔╝ ╚████╔╝    ██║   █████╗  
+██║     ██║   ██║██║  ██║██╔══╝  ██╔══██╗██╔══██╗  ╚██╔╝     ██║   ██╔══╝  
+╚██████╗╚██████╔╝██████╔╝███████╗██║  ██║██████╔╝   ██║      ██║   ███████╗
+ ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═════╝    ╚═╝      ╚═╝   ╚══════╝
+                                                                           
+███████╗██╗  ██╗███████╗██████╗  ██████╗██╗███████╗███████╗███████╗        
+██╔════╝╚██╗██╔╝██╔════╝██╔══██╗██╔════╝██║██╔════╝██╔════╝██╔════╝        
+█████╗   ╚███╔╝ █████╗  ██████╔╝██║     ██║███████╗█████╗  ███████╗        
+██╔══╝   ██╔██╗ ██╔══╝  ██╔══██╗██║     ██║╚════██║██╔══╝  ╚════██║        
+███████╗██╔╝ ██╗███████╗██║  ██║╚██████╗██║███████║███████╗███████║        
+╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝╚══════╝╚══════╝╚══════╝        
+                                                                           
+                         ██╗      ███████╗                                 
+                        ███║      ██╔════╝                                 
+                        ╚██║█████╗███████╗                                 
+                         ██║╚════╝╚════██║                                 
+                         ██║      ███████║                                 
+                         ╚═╝      ╚══════╝                                 
+                                                
+
+/*************************************************************
+Exercise One
+
+Have the function FirstReverse(str) take the str parameter being
+passed and return the string in reversed order.
+*************************************************************/
+function FirstReverse(str) {     var array = [];   for(var i = 1, len
+= str.length ; i <= len ; i++){       array.push(str.charAt(len - i));
+}   return str = array.join("");
 
           
 }
-console.log(FirstReverse("I love coding so much!"));
+console.log(FirstReverse("Wow this string will be reversed!"));
 
-//exercise two 
+//→ !desrever eb lliw gnirts siht woW
+
+/*************************************************************
+Exercise Two
+
+Have the function FirstFactorial(num) take the num parameter being
+passed and return the factorial of it (ie. if num = 4, return (4 * 3 *
+2 * 1)).
+*************************************************************/
+
 function FirstFactorial(num) { 
   			var array = [] 
 			for(var i = num; i > -1; i--){
@@ -33,9 +67,17 @@ function FirstFactorial(num) {
    
 
 console.log(FirstFactorial(8));
+//→ 40320
 
+/*************************************************************
+Exercise Three
 
-//exercise three
+Using the JavaScript language, have the function LongestWord(sen) take
+the sen parameter being passed and return the largest word in the
+string. If there are two or more words that are the same length,
+return the first word from the string with that length. Ignore
+punctuation and assume sen will not be empty.
+*************************************************************/
 
 function LongestWord(sen){
 	// Remove special characters from string
@@ -58,7 +100,16 @@ function LongestWord(sen){
 
 console.log(LongestWord("This* is@ a test!! Longword@@"))
 
-//exercise four
+/*************************************************************
+Exercise Four
+
+Using the JavaScript language, have the function LetterChanges(str)
+take the str parameter being passed and modify it using the following
+algorithm. Replace every letter in the string with the letter
+following it in the alphabet (ie. c becomes d, z becomes a). Then
+capitalize every vowel in this new string (a, e, i, o, u) and finally
+return this modified string.
+*************************************************************/
 
 function LetterChanges(str){
 
@@ -86,7 +137,13 @@ console.log(LetterChanges("acfghkomz!!!."));
 
 
 
-//exercise five
+/*************************************************************
+Exercise Five
+
+Using the JavaScript language, have the function
+SimpleAdding(num) add up all the numbers from 1 to num. For the test
+cases, the parameter num will be any number from 1 to 1000.
+*************************************************************/
 
 function SimpleAdding(num) { 
 
