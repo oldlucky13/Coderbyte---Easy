@@ -99,6 +99,7 @@ function LongestWord(sen){
 }
 
 console.log(LongestWord("This* is@ a test!! Longword@@"))
+//→ Longword
 
 /*************************************************************
 Exercise Four
@@ -133,9 +134,9 @@ function LetterChanges(str){
 }
 
 
-console.log(LetterChanges("acfghkomz!!!."));
+console.log(LetterChanges("Change These Letterz! zdhnt"));
 
-
+//→ CIbOhf TIftf LfUUfsA! AEIOU
 
 /*************************************************************
 Exercise Five
@@ -146,30 +147,25 @@ cases, the parameter num will be any number from 1 to 1000.
 *************************************************************/
 
 function SimpleAdding(num) { 
-
-  var array = []
-  , sum = 0;
-
+    var array = []
+         ,sum = 0;
 
   for (var i = 1; i <= num ; i++) {
-    array.push(i);
-  }
-  
+        array.push(i);  
+}
 
   for(var i=0; i< array.length; i++){
-    sum += array[i];
-
- }
+        sum += array[i];
+}
  
- return sum  ; 
+ return sum; 
 
 }
 
 
 console.log(SimpleAdding(100));
 
-
-
+//→ 5050
 
 
 
