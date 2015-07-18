@@ -80,21 +80,19 @@ punctuation and assume sen will not be empty.
 *************************************************************/
 
 function LongestWord(sen){
-	// Remove special characters from string
-		var str = sen.replace(/[^a-zA-Z0-9 ]/g, "");
+  // Remove special characters from string
+  var str = sen.replace(/[^a-zA-Z0-9 ]/g, "");
         var array = str.split(" ");;
 
-				for(var i = 0; i <= array.length ; i++  ){
+  for(var i = 0; i <= array.length ; i++  ){
+      array = array.sort(function(a,b){
+        return b.length - a.length;
+    });
+    
+  return array = array.shift();
+  }
 
-					 array = array.sort(function(a,b){
-
-							return b.length - a.length;
-						});
-
-						return array = array.shift();
-				}
-
-		return sen = array;
+  return sen = array;
 
 }
 
